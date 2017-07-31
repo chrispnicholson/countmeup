@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: uk.co.bbc.countmeup.CucumberTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 12.564 sec - in uk.co.bbc.countmeup.CucumberTest

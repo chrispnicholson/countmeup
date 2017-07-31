@@ -1,0 +1,13 @@
+uk\co\bbc\countmeup\entity\Candidate.class
+uk\co\bbc\countmeup\SpringDemoApplication.class
+uk\co\bbc\countmeup\service\CandidateServiceImpl.class
+uk\co\bbc\countmeup\service\CandidateService.class
+uk\co\bbc\countmeup\dao\VoteRepository.class
+uk\co\bbc\countmeup\dao\CandidateRepository.class
+uk\co\bbc\countmeup\dao\VoteRepositoryImpl.class
+uk\co\bbc\countmeup\entity\Vote.class
+uk\co\bbc\countmeup\dao\CandidateRepositoryImpl.class
+uk\co\bbc\countmeup\dto\CandidateDto.class
+uk\co\bbc\countmeup\entity\User.class
+uk\co\bbc\countmeup\VersionController.class
+uk\co\bbc\countmeup\CandidatesController.class

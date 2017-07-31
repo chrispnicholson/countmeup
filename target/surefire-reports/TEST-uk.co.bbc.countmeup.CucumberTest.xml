@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="uk.co.bbc.countmeup.CucumberTest" time="0.001" tests="12" errors="0" skipped="7" failures="0">
+  <properties>
+    <property name="idea.version" value="2017.1.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Chris\IdeaProjects\countmeup"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Chris\IdeaProjects\countmeup"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Chris\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\pik\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Git\cmd;C:\apache-maven-3.2.1\bin;C:\Program Files (x86)\MySQL\MySQL Utilities 1.3.6\;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\Skype\Phone\;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby1.9.3\bin;C:\Users\Chris\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Chris"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Chris"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.2\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.1.2 test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="Given 10000000 votes were received" classname="Scenario: partition choices sent to the queue by candidate percentage" time="0">
+    <skipped/>
+    <system-out><![CDATA[18:24:34.502 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class uk.co.bbc.countmeup.service.CandidatesServiceImplTest]
+18:24:34.514 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+18:24:34.531 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+18:24:34.550 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [uk.co.bbc.countmeup.service.CandidatesServiceImplTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+18:24:34.577 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [uk.co.bbc.countmeup.service.CandidatesServiceImplTest], using DelegatingSmartContextLoader
+18:24:34.586 [main] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to GenericGroovyXmlContextLoader to process context configuration [ContextConfigurationAttributes@712625fd declaringClass = 'uk.co.bbc.countmeup.service.CandidatesServiceImplTest', classes = '{}', locations = '{}', inheritLocations = false, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+18:24:34.592 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [uk.co.bbc.countmeup.service.CandidatesServiceImplTest]: class path resource [uk/co/bbc/countmeup/service/CandidatesServiceImplTest-context.xml] does not exist
+18:24:34.593 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [uk.co.bbc.countmeup.service.CandidatesServiceImplTest]: class path resource [uk/co/bbc/countmeup/service/CandidatesServiceImplTestContext.groovy] does not exist
+18:24:34.593 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [uk.co.bbc.countmeup.service.CandidatesServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:24:34.594 [main] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@712625fd declaringClass = 'uk.co.bbc.countmeup.service.CandidatesServiceImplTest', classes = '{}', locations = '{}', inheritLocations = false, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+18:24:34.609 [main] INFO org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - AnnotationConfigContextLoader detected default configuration classes for context configuration [ContextConfigurationAttributes@712625fd declaringClass = 'uk.co.bbc.countmeup.service.CandidatesServiceImplTest', classes = '{class uk.co.bbc.countmeup.service.CandidatesServiceImplTest$CandidateServiceImplTestContextConfiguration}', locations = '{}', inheritLocations = false, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+18:24:34.695 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [uk.co.bbc.countmeup.service.CandidatesServiceImplTest]
+18:24:34.697 [main] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [uk.co.bbc.countmeup.service.CandidatesServiceImplTest]: using defaults.
+18:24:34.706 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:24:34.821 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@50f6ac94, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6cc4cdb9, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@28194a50, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7f2cfe3f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1a5b6f42, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5038d0b5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@32115b28, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2ad48653, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6bb4dd34, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7d9f158f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@45efd90f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4b8729ff]
+18:24:34.831 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [uk.co.bbc.countmeup.service.CandidatesServiceImplTest]
+18:24:34.832 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [uk.co.bbc.countmeup.service.CandidatesServiceImplTest]
+18:24:34.941 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+18:24:34.941 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+18:24:34.947 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [uk.co.bbc.countmeup.StepDefs] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+18:24:34.957 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.context.SpringBootContextLoader] for context configuration attributes [ContextConfigurationAttributes@70e38ce1 declaringClass = 'uk.co.bbc.countmeup.SpringIntegrationTest', classes = '{class uk.co.bbc.countmeup.SpringDemoApplication}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.context.SpringBootContextLoader']
+18:24:34.963 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [uk.co.bbc.countmeup.SpringIntegrationTest]: class path resource [uk/co/bbc/countmeup/SpringIntegrationTest-context.xml] does not exist
+18:24:34.964 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [uk.co.bbc.countmeup.SpringIntegrationTest]: class path resource [uk/co/bbc/countmeup/SpringIntegrationTestContext.groovy] does not exist
+18:24:34.964 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [uk.co.bbc.countmeup.SpringIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:24:34.989 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [uk.co.bbc.countmeup.StepDefs]
+18:24:35.033 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [uk.co.bbc.countmeup.StepDefs]: using defaults.
+18:24:35.045 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:24:35.059 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7fc4780b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3b79fd76, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@48c76607, org.springframework.test.context.support.DirtiesContextTestExecutionListener@43599640, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1f81aa00, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6b6776cb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1863d2fe, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1787bc24, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@544d57e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@55c53a33, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@53b7f657, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@797b0699]
+18:24:35.307 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+18:24:35.307 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+18:24:35.308 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+18:24:35.312 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+18:24:35.314 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.6.RELEASE)
+
+2017-07-31 18:24:36.454  INFO 8276 --- [           main] uk.co.bbc.countmeup.StepDefs             : Starting StepDefs on Treadstone with PID 8276 (started by Chris in C:\Users\Chris\IdeaProjects\countmeup)
+2017-07-31 18:24:36.458  INFO 8276 --- [           main] uk.co.bbc.countmeup.StepDefs             : No active profile set, falling back to default profiles: default
+2017-07-31 18:24:37.129  INFO 8276 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c2db68f: startup date [Mon Jul 31 18:24:37 BST 2017]; root of context hierarchy
+2017-07-31 18:24:40.192  INFO 8276 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2017-07-31 18:24:40.209  INFO 8276 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-31 18:24:40.212  INFO 8276 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-07-31 18:24:40.523  INFO 8276 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-31 18:24:40.523  INFO 8276 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3447 ms
+2017-07-31 18:24:40.962  INFO 8276 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-31 18:24:40.969  INFO 8276 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-31 18:24:40.970  INFO 8276 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-31 18:24:40.970  INFO 8276 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-31 18:24:40.970  INFO 8276 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-31 18:24:42.508  INFO 8276 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-31 18:24:42.552  INFO 8276 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-07-31 18:24:42.719  INFO 8276 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-07-31 18:24:42.726  INFO 8276 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-07-31 18:24:42.729  INFO 8276 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-07-31 18:24:42.852  INFO 8276 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-07-31 18:24:43.178  INFO 8276 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-07-31 18:24:43.664  INFO 8276 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-07-31 18:24:43.677  INFO 8276 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-07-31 18:24:43.745  INFO 8276 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-31 18:24:45.274  INFO 8276 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c2db68f: startup date [Mon Jul 31 18:24:37 BST 2017]; root of context hierarchy
+2017-07-31 18:24:45.443  INFO 8276 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/candidates],methods=[GET]}" onto public uk.co.bbc.countmeup.dto.CandidateDto uk.co.bbc.countmeup.CandidatesController.getCandidate(java.lang.String)
+2017-07-31 18:24:45.446  INFO 8276 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String uk.co.bbc.countmeup.VersionController.getVersion()
+2017-07-31 18:24:45.449  INFO 8276 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-31 18:24:45.450  INFO 8276 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-31 18:24:45.617  INFO 8276 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-31 18:24:45.617  INFO 8276 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-31 18:24:45.741  INFO 8276 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-31 18:24:46.422  INFO 8276 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 51829 (http)
+2017-07-31 18:24:46.432  INFO 8276 --- [           main] uk.co.bbc.countmeup.StepDefs             : Started StepDefs in 11.106 seconds (JVM running for 13.835)
+]]></system-out>
+  </testcase>
+  <testcase name="And votes were distributed against candidates as:" classname="Scenario: partition choices sent to the queue by candidate percentage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And no more than 3 votes per user are allowed" classname="Scenario: partition choices sent to the queue by candidate percentage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="When CountMeUp is asked for the results" classname="Scenario: partition choices sent to the queue by candidate percentage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then it responds in under 1 seconds" classname="Scenario: partition choices sent to the queue by candidate percentage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And the final counts are:" classname="Scenario: partition choices sent to the queue by candidate percentage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Scenario: partition choices sent to the queue by candidate percentage" classname="Scenario: partition choices sent to the queue by candidate percentage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Scenario: partition choices sent to the queue by candidate percentage" classname="Scenario: partition choices sent to the queue by candidate percentage" time="11.762"/>
+  <testcase name="When the client calls /version" classname="Scenario: client makes call to GET /version" time="0"/>
+  <testcase name="Then the client receives status code of 200" classname="Scenario: client makes call to GET /version" time="0.001"/>
+  <testcase name="And the client receives server version 1.0" classname="Scenario: client makes call to GET /version" time="0"/>
+  <testcase name="Scenario: client makes call to GET /version" classname="Scenario: client makes call to GET /version" time="0"/>
+</testsuite>
