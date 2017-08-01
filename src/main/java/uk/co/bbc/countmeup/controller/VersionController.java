@@ -1,4 +1,4 @@
-package uk.co.bbc.countmeup;
+package uk.co.bbc.countmeup.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

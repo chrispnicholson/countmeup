@@ -43,7 +43,7 @@ public class CandidatesServiceImplTest {
     static class CandidateServiceImplTestContextConfiguration {
 
         @Bean
-        public CandidateService employeeService() {
+        public CandidateService candidateService() {
             return new CandidateServiceImpl();
         }
     }
