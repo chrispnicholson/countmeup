@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 import uk.co.bbc.countmeup.dto.CandidateDto;
 import uk.co.bbc.countmeup.service.CandidateService;
 
+import java.util.List;
+
 /**
  * Created by Chris on 30-Jul-17.
  */
@@ -22,5 +24,11 @@ public class CandidatesController {
     @RequestMapping(method={RequestMethod.GET},value={"/{id}"})
     public CandidateDto getCandidate(@PathVariable int id) {
         return candidateService.getCandidate(id);
+    }
+
+    @RequestMapping(method = RequestMethod.GET)
+    public List<CandidateDto> getAllCandidates() {
+        List<CandidateDto> listOfCandidates = candidateService.getAllCandidates();
+        return listOfCandidates;
     }
 }

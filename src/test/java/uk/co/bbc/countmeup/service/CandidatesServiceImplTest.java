@@ -37,7 +37,10 @@ public class CandidatesServiceImplTest {
     @Autowired
     private CandidateService candidateService;
 
-    private Candidate candidate;
+    private Candidate candidateOne;
+    private Candidate candidateTwo;
+
+    private List<Candidate> listOfCandidates;
 
     @TestConfiguration
     static class CandidateServiceImplTestContextConfiguration {
@@ -50,23 +53,40 @@ public class CandidatesServiceImplTest {
 
     @Before
     public void setUp() {
-        User user = new User();
-        user.setId(1234);
-        user.setName("Dougie Jones");
+        User userOne = new User();
+        userOne.setId(1234);
+        userOne.setName("Dougie Jones");
         List<Vote> listOfVotes = new ArrayList<Vote>();
         for (int i = 0; i < 1000; i++) {
             Vote vote = new Vote();
             listOfVotes.add(vote);
         }
-        candidate = new Candidate();
-        candidate.setCandidateId(1);
-        candidate.setUser(user);
-        candidate.setVotes(listOfVotes);
+        candidateOne = new Candidate();
+        candidateOne.setCandidateId(1);
+        candidateOne.setUser(userOne);
+        candidateOne.setVotes(listOfVotes);
+
+        User userTwo = new User();
+        userTwo.setId(5678);
+        userTwo.setName("Janey E");
+        listOfVotes = new ArrayList<Vote>();
+        for (int i = 0; i < 9000; i++) {
+            Vote vote = new Vote();
+            listOfVotes.add(vote);
+        }
+        candidateTwo = new Candidate();
+        candidateTwo.setCandidateId(2);
+        candidateTwo.setUser(userTwo);
+        candidateTwo.setVotes(listOfVotes);
+
+        listOfCandidates = new ArrayList<Candidate>();
+        listOfCandidates.add(candidateOne);
+        listOfCandidates.add(candidateTwo);
     }
 
     @Test
     public void getCandidate() {
-        when(candidateRepository.findCandidateById(1)).thenReturn(candidate);
+        when(candidateRepository.findCandidateById(1)).thenReturn(candidateOne);
         when(voteRepository.countAllVotes()).thenReturn(10000l);
 
         CandidateDto candidateDto = candidateService.getCandidate(1);
@@ -75,5 +95,17 @@ public class CandidatesServiceImplTest {
         assertEquals("Dougie Jones", candidateDto.getName());
         assertEquals(1000, candidateDto.getVotes());
         assertEquals("10%", candidateDto.getVotesPercentage());
+    }
+
+    @Test
+    public void getAllCandidates() {
+        when(candidateRepository.findAllCandidates()).thenReturn(listOfCandidates);
+        when(voteRepository.countAllVotes()).thenReturn(10000l);
+
+        List<CandidateDto> candidateDtoList = candidateService.getAllCandidates();
+        assertNotNull(candidateDtoList);
+        assertEquals(2, candidateDtoList.size());
+        assertEquals("10%", candidateDtoList.get(0).getVotesPercentage());
+        assertEquals("90%", candidateDtoList.get(1).getVotesPercentage());
     }
 }

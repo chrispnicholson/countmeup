@@ -31,6 +31,12 @@ public class UserServiceImplTest {
     }
 
     @Test
+    public void registerUser() {
+        // creates a user with an email address
+        // cannot create another user associated with same email address
+    }
+
+    @Test
     public void getUsers() {
 
     }

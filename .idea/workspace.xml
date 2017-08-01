@@ -1,55 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3217d41a-6aa1-4d74-a97b-98276bdafe4f" name="Default" comment="Adding controller logic for candidates">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/UserRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/UserRepositoryImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/UserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/controller/CandidatesControllerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/UserServiceImplTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4jdbc.log4j2.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/hello.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/uk/co/bbc/countmeup/CandidatesController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/uk/co/bbc/countmeup/SpringDemoApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/uk/co/bbc/countmeup/VersionController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/uk/co/bbc/countmeup/dao/CandidateRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/uk/co/bbc/countmeup/dao/CandidateRepositoryImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/uk/co/bbc/countmeup/dao/VoteRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/uk/co/bbc/countmeup/dao/VoteRepositoryImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/uk/co/bbc/countmeup/dto/CandidateDto.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/uk/co/bbc/countmeup/entity/Candidate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/uk/co/bbc/countmeup/entity/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/uk/co/bbc/countmeup/entity/Vote.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/uk/co/bbc/countmeup/service/CandidateService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/uk/co/bbc/countmeup/service/CandidateServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-uk.co.bbc.countmeup.CucumberTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-uk.co.bbc.countmeup.service.CandidatesServiceImplTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/uk.co.bbc.countmeup.CucumberTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/uk.co.bbc.countmeup.service.CandidatesServiceImplTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/candidates.feature" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/uk/co/bbc/countmeup/CucumberTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/uk/co/bbc/countmeup/HeaderSettingRequestCallback.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/uk/co/bbc/countmeup/ResponseResults.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/uk/co/bbc/countmeup/SpringIntegrationTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/uk/co/bbc/countmeup/SpringIntegrationTest$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/uk/co/bbc/countmeup/SpringIntegrationTest$ResponseResultErrorHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/uk/co/bbc/countmeup/SpringIntegrationTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/uk/co/bbc/countmeup/StepDefs.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/uk/co/bbc/countmeup/service/CandidatesServiceImplTest$CandidateServiceImplTestContextConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/uk/co/bbc/countmeup/service/CandidatesServiceImplTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/version.feature" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/CandidatesController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/controller/CandidatesController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/VersionController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/controller/VersionController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="3217d41a-6aa1-4d74-a97b-98276bdafe4f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/controller/CandidatesController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/controller/CandidatesController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepository.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepositoryImpl.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepositoryImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateService.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/controller/CandidatesControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/controller/CandidatesControllerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/CandidatesServiceImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/CandidatesServiceImplTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/UserServiceImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/UserServiceImplTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,14 +27,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CandidatesController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CandidatesController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/controller/CandidatesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+            <state relative-caret-position="391">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
-                <element signature="e#765#766#0" expanded="true" />
-                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+                <element signature="e#845#846#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,20 +43,21 @@
       <file leaf-file-name="CandidatesControllerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/controller/CandidatesControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="33" column="53" lean-forward="false" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+            <state relative-caret-position="569">
+              <caret line="80" column="58" lean-forward="false" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2135#2149#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImplTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserServiceImplTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/UserServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="35" column="72" lean-forward="false" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,21 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CandidateService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            <state relative-caret-position="187">
+              <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -146,19 +98,11 @@
       <file leaf-file-name="CandidateServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="32" column="66" lean-forward="false" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="524">
+              <caret line="51" column="81" lean-forward="false" selection-start-line="51" selection-start-column="81" selection-end-line="51" selection-end-column="81" />
+              <folding>
+                <element signature="e#1690#1704#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,11 +110,36 @@
       <file leaf-file-name="CandidatesServiceImplTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/CandidatesServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="1119">
+              <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1608#1614#0" expanded="true" />
+                <element signature="e#1703#1709#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CandidateRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CandidateRepositoryImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepositoryImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="20" />
+              <folding>
+                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -216,25 +185,25 @@
         <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/SpringDemoApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepositoryInMemory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateService.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/VoteRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateServiceImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/VoteRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/StepDefs.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/SpringIntegrationTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/CandidatesServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/controller/VersionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/UserRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/UserServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/controller/CandidatesControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateService.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/controller/CandidatesController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/controller/CandidatesControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/CandidatesServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/UserServiceImplTest.java" />
       </list>
     </option>
   </component>
@@ -346,6 +315,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="countmeup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="countmeup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="countmeup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="countmeup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="countmeup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="countmeup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="countmeup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -527,85 +560,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CandidatesControllerTest">
-    <configuration default="false" name="CandidatesServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="uk.co.bbc.countmeup.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="countmeup" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="uk.co.bbc.countmeup.service" />
-      <option name="MAIN_CLASS_NAME" value="uk.co.bbc.countmeup.service.CandidatesServiceImplTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CandidatesServiceImplTest.getCandidate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="uk.co.bbc.countmeup.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="countmeup" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="uk.co.bbc.countmeup.service" />
-      <option name="MAIN_CLASS_NAME" value="uk.co.bbc.countmeup.service.CandidatesServiceImplTest" />
-      <option name="METHOD_NAME" value="getCandidate" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="UserServiceImplTest.getUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="uk.co.bbc.countmeup.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="countmeup" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="uk.co.bbc.countmeup.service" />
-      <option name="MAIN_CLASS_NAME" value="uk.co.bbc.countmeup.service.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="getUsers" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.CandidatesServiceImplTest">
     <configuration default="false" name="CandidatesControllerTest.getCandidateById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -644,6 +599,84 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="uk.co.bbc.countmeup.controller" />
       <option name="MAIN_CLASS_NAME" value="uk.co.bbc.countmeup.controller.CandidatesControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CandidatesControllerTest.getListOfCandidates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="uk.co.bbc.countmeup.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="countmeup" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="uk.co.bbc.countmeup.controller" />
+      <option name="MAIN_CLASS_NAME" value="uk.co.bbc.countmeup.controller.CandidatesControllerTest" />
+      <option name="METHOD_NAME" value="getListOfCandidates" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CandidatesServiceImplTest.getAllCandidates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="uk.co.bbc.countmeup.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="countmeup" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="uk.co.bbc.countmeup.service" />
+      <option name="MAIN_CLASS_NAME" value="uk.co.bbc.countmeup.service.CandidatesServiceImplTest" />
+      <option name="METHOD_NAME" value="getAllCandidates" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CandidatesServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="uk.co.bbc.countmeup.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="countmeup" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="uk.co.bbc.countmeup.service" />
+      <option name="MAIN_CLASS_NAME" value="uk.co.bbc.countmeup.service.CandidatesServiceImplTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -891,19 +924,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CandidatesServiceImplTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CandidatesServiceImplTest.getCandidate" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UserServiceImplTest.getUsers" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CandidatesControllerTest.getCandidateById" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CandidatesControllerTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CandidatesControllerTest.getCandidateById" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CandidatesControllerTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CandidatesControllerTest.getListOfCandidates" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CandidatesServiceImplTest.getAllCandidates" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CandidatesServiceImplTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CandidatesControllerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CandidatesControllerTest.getCandidateById" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UserServiceImplTest.getUsers" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CandidatesServiceImplTest.getCandidate" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CandidatesServiceImplTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CandidatesServiceImplTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CandidatesServiceImplTest.getAllCandidates" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CandidatesControllerTest.getListOfCandidates" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CandidatesControllerTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CandidatesControllerTest.getCandidateById" />
       </list>
     </recent_temporary>
   </component>
@@ -918,38 +951,46 @@
       <option name="presentableId" value="Default" />
       <updated>1501416368886</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adding controller logic for candidates">
+      <created>1501594142123</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1501594142124</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CandidatesControllerTest - 2017.08.01 at 13h 33m 08s.xml">
-      <configuration name="CandidatesControllerTest" configurationId="JUnit" />
+    <history-entry file="CandidatesControllerTest_getListOfCandidates - 2017.08.01 at 15h 33m 01s.xml">
+      <configuration name="CandidatesControllerTest.getListOfCandidates" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CandidatesControllerTest - 2017.08.01 at 13h 42m 34s.xml">
-      <configuration name="CandidatesControllerTest" configurationId="JUnit" />
+    <history-entry file="CandidatesControllerTest_getListOfCandidates - 2017.08.01 at 15h 34m 45s.xml">
+      <configuration name="CandidatesControllerTest.getListOfCandidates" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CandidatesControllerTest_getCandidateById - 2017.08.01 at 13h 24m 26s.xml">
-      <configuration name="CandidatesControllerTest.getCandidateById" configurationId="JUnit" />
+    <history-entry file="CandidatesControllerTest_getListOfCandidates - 2017.08.01 at 15h 35m 25s.xml">
+      <configuration name="CandidatesControllerTest.getListOfCandidates" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CandidatesControllerTest_getCandidateById - 2017.08.01 at 13h 26m 59s.xml">
-      <configuration name="CandidatesControllerTest.getCandidateById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CandidatesServiceImplTest - 2017.07.31 at 15h 18m 08s.xml">
+    <history-entry file="CandidatesServiceImplTest - 2017.08.01 at 15h 53m 19s.xml">
       <configuration name="CandidatesServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CandidatesServiceImplTest - 2017.07.31 at 15h 18m 57s.xml">
+    <history-entry file="CandidatesServiceImplTest - 2017.08.01 at 15h 54m 25s.xml">
       <configuration name="CandidatesServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CandidatesServiceImplTest_getCandidate - 2017.07.31 at 18h 55m 17s.xml">
-      <configuration name="CandidatesServiceImplTest.getCandidate" configurationId="JUnit" />
+    <history-entry file="CandidatesServiceImplTest - 2017.08.01 at 15h 57m 54s.xml">
+      <configuration name="CandidatesServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceImplTest_getUsers - 2017.07.31 at 19h 06m 05s.xml">
-      <configuration name="UserServiceImplTest.getUsers" configurationId="JUnit" />
+    <history-entry file="CandidatesServiceImplTest - 2017.08.01 at 16h 06m 13s.xml">
+      <configuration name="CandidatesServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceImplTest_getUsers - 2017.07.31 at 19h 07m 47s.xml">
-      <configuration name="UserServiceImplTest.getUsers" configurationId="JUnit" />
+    <history-entry file="CandidatesServiceImplTest - 2017.08.01 at 16h 07m 27s.xml">
+      <configuration name="CandidatesServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceImplTest_getUsers - 2017.07.31 at 19h 08m 05s.xml">
-      <configuration name="UserServiceImplTest.getUsers" configurationId="JUnit" />
+    <history-entry file="CandidatesServiceImplTest - 2017.08.01 at 16h 08m 15s.xml">
+      <configuration name="CandidatesServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CandidatesServiceImplTest_getAllCandidates - 2017.08.01 at 15h 43m 59s.xml">
+      <configuration name="CandidatesServiceImplTest.getAllCandidates" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -989,12 +1030,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Adding controller logic for candidates" />
     <option name="LAST_COMMIT_MESSAGE" value="Adding controller logic for candidates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1095,8 +1138,8 @@
         <state relative-caret-position="374">
           <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1158,20 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="25" column="61" lean-forward="false" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="84" lean-forward="false" selection-start-line="7" selection-start-column="84" selection-end-line="7" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -1285,22 +1314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" column="66" lean-forward="false" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1333,44 +1346,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/CandidatesServiceImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="48" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1608#1614#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/UserServiceImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/controller/CandidatesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/controller/CandidatesControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="80" column="58" lean-forward="false" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2135#2149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/service/CandidateServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="51" column="81" lean-forward="false" selection-start-line="51" selection-start-column="81" selection-end-line="51" selection-end-column="81" />
+          <folding>
+            <element signature="e#1690#1704#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/CandidatesServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1119">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1703#1709#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="33" column="53" lean-forward="false" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/controller/CandidatesController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/bbc/countmeup/dao/CandidateRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+        <state relative-caret-position="238">
+          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="20" />
           <folding>
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/uk/co/bbc/countmeup/service/UserServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="35" column="72" lean-forward="false" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
