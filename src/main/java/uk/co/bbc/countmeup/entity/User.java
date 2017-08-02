@@ -1,13 +1,21 @@
 package uk.co.bbc.countmeup.entity;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 /**
  * Created by Chris on 31-Jul-17.
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class User {
-    private long id;
+    private Long id;
     private String name;
+    private String userName;
 
-    public void setId(long id) {
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -17,5 +25,13 @@ public class User {
 
     public String getName() {
         return name;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getUserName() {
+        return userName;
     }
 }

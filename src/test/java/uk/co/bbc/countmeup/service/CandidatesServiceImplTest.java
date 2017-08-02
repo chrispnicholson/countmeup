@@ -54,7 +54,7 @@ public class CandidatesServiceImplTest {
     @Before
     public void setUp() {
         User userOne = new User();
-        userOne.setId(1234);
+        userOne.setId(new Long(1234));
         userOne.setName("Dougie Jones");
         List<Vote> listOfVotes = new ArrayList<Vote>();
         for (int i = 0; i < 1000; i++) {
@@ -67,7 +67,7 @@ public class CandidatesServiceImplTest {
         candidateOne.setVotes(listOfVotes);
 
         User userTwo = new User();
-        userTwo.setId(5678);
+        userTwo.setId(new Long(5678));
         userTwo.setName("Janey E");
         listOfVotes = new ArrayList<Vote>();
         for (int i = 0; i < 9000; i++) {
