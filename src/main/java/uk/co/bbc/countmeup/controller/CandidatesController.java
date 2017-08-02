@@ -23,12 +23,12 @@ public class CandidatesController {
 
     @RequestMapping(method={RequestMethod.GET},value={"/{id}"})
     public CandidateDto getCandidate(@PathVariable int id) {
-        return candidateService.getCandidate(id);
+        return candidateService.getCandidateDto(id);
     }
 
     @RequestMapping(method = RequestMethod.GET)
     public List<CandidateDto> getAllCandidates() {
-        List<CandidateDto> listOfCandidates = candidateService.getAllCandidates();
+        List<CandidateDto> listOfCandidates = candidateService.getAllCandidateDtos();
         return listOfCandidates;
     }
 }

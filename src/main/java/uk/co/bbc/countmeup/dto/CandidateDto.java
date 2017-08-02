@@ -1,8 +1,13 @@
 package uk.co.bbc.countmeup.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonRootName;
+
 /**
  * Created by Chris on 30-Jul-17.
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonRootName(value = "candidate")
 public class CandidateDto {
     int id;
     String name;

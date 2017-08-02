@@ -89,7 +89,7 @@ public class CandidatesServiceImplTest {
         when(candidateRepository.findCandidateById(1)).thenReturn(candidateOne);
         when(voteRepository.countAllVotes()).thenReturn(10000l);
 
-        CandidateDto candidateDto = candidateService.getCandidate(1);
+        CandidateDto candidateDto = candidateService.getCandidateDto(1);
         assertNotNull(candidateDto);
         assertEquals(1, candidateDto.getId());
         assertEquals("Dougie Jones", candidateDto.getName());
@@ -102,7 +102,7 @@ public class CandidatesServiceImplTest {
         when(candidateRepository.findAllCandidates()).thenReturn(listOfCandidates);
         when(voteRepository.countAllVotes()).thenReturn(10000l);
 
-        List<CandidateDto> candidateDtoList = candidateService.getAllCandidates();
+        List<CandidateDto> candidateDtoList = candidateService.getAllCandidateDtos();
         assertNotNull(candidateDtoList);
         assertEquals(2, candidateDtoList.size());
         assertEquals("10%", candidateDtoList.get(0).getVotesPercentage());

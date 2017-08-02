@@ -42,7 +42,7 @@ public class CandidatesControllerTest {
         candidateDto.setVotes(10000);
         candidateDto.setVotesPercentage("10%");
 
-        Mockito.when(candidateService.getCandidate(1)).thenReturn(candidateDto);
+        Mockito.when(candidateService.getCandidateDto(1)).thenReturn(candidateDto);
 
         mockMvc.perform(get("/candidates/1")
                 .contentType(MediaType.APPLICATION_JSON))
@@ -66,7 +66,7 @@ public class CandidatesControllerTest {
             listOfCandidates.add(candidateDto);
         }
 
-        Mockito.when(candidateService.getAllCandidates()).thenReturn(listOfCandidates);
+        Mockito.when(candidateService.getAllCandidateDtos()).thenReturn(listOfCandidates);
 
         mockMvc.perform(get("/candidates")
                 .contentType(MediaType.APPLICATION_JSON))

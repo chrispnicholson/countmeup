@@ -23,7 +23,7 @@ public class CandidateServiceImpl implements CandidateService {
     private VoteRepository voteRepository;
 
     @Override
-    public CandidateDto getCandidate(int id) {
+    public CandidateDto getCandidateDto(int id) {
         Candidate candidate = candidateRepository.findCandidateById(id);
         long allVotesCount = voteRepository.countAllVotes();
 
@@ -42,7 +42,7 @@ public class CandidateServiceImpl implements CandidateService {
     }
 
     @Override
-    public List<CandidateDto> getAllCandidates() {
+    public List<CandidateDto> getAllCandidateDtos() {
         List<Candidate> candidateList = candidateRepository.findAllCandidates();
         long allVotesCount = voteRepository.countAllVotes();
 
@@ -53,6 +53,11 @@ public class CandidateServiceImpl implements CandidateService {
         }
 
         return candidateDtoList;
+    }
+
+    @Override
+    public Candidate getCandidate(int id) {
+        return null;
     }
 
     //without decimal digits

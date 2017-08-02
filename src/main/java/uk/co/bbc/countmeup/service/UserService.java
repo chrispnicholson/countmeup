@@ -10,4 +10,6 @@ import uk.co.bbc.countmeup.entity.User;
 @Service
 public interface UserService {
     public User registerUser(String userName) throws Exception;
+
+    public User getUser(long l);
 }

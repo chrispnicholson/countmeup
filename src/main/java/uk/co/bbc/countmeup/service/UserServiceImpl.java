@@ -20,4 +20,9 @@ public class UserServiceImpl implements UserService {
 
         return registeredUser;
     }
+
+    @Override
+    public User getUser(long l) {
+        return null;
+    }
 }

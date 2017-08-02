@@ -76,9 +76,4 @@ public class UserControllerTest {
     public void registerInvalidEmailForUser() {
         // if no valid email address, return error
     }
-
-    @Test
-    public void registerSameEmailTwice() {
-        // if attempt to register unregisteredUser with valid email address again, return error
-    }
 }
