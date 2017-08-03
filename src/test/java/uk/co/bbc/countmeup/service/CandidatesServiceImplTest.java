@@ -57,27 +57,23 @@ public class CandidatesServiceImplTest {
         userOne.setId(new Long(1234));
         userOne.setName("Dougie Jones");
         List<Vote> listOfVotes = new ArrayList<Vote>();
-        for (int i = 0; i < 1000; i++) {
-            Vote vote = new Vote();
-            listOfVotes.add(vote);
-        }
         candidateOne = new Candidate();
         candidateOne.setCandidateId(1);
         candidateOne.setUser(userOne);
-        candidateOne.setVotes(listOfVotes);
+        for (int i = 0; i < 1000; i++) {
+            Vote vote = new Vote(userOne, candidateOne);
+        }
 
         User userTwo = new User();
         userTwo.setId(new Long(5678));
         userTwo.setName("Janey E");
         listOfVotes = new ArrayList<Vote>();
-        for (int i = 0; i < 9000; i++) {
-            Vote vote = new Vote();
-            listOfVotes.add(vote);
-        }
         candidateTwo = new Candidate();
         candidateTwo.setCandidateId(2);
         candidateTwo.setUser(userTwo);
-        candidateTwo.setVotes(listOfVotes);
+        for (int i = 0; i < 9000; i++) {
+            Vote vote = new Vote(userTwo, candidateTwo);
+        }
 
         listOfCandidates = new ArrayList<Candidate>();
         listOfCandidates.add(candidateOne);

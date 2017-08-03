@@ -1,5 +1,6 @@
 package uk.co.bbc.countmeup.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,7 +11,7 @@ public class Candidate {
     // one-to-one relationship with User - Candidate is a User
     private User user;
     // one-to-many relationship with Votes - can have zero to many votes
-    private List<Vote> votes;
+    private List<Vote> votes = new ArrayList<Vote>();
 
     public int getCandidateId() {
         return candidateId;
@@ -32,7 +33,7 @@ public class Candidate {
         return votes;
     }
 
-    public void setVotes(List<Vote> votes) {
-        this.votes = votes;
+    public void addVote(Vote vote) {
+        votes.add(vote);
     }
 }

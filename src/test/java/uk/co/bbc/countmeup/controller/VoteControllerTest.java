@@ -77,6 +77,14 @@ public class VoteControllerTest {
         candidateDto = new CandidateDto();
         candidateDto.setId(1);
 
+        voteOne = new Vote(user, candidate);
+        voteTwo = new Vote(user, candidate);
+        voteThree = new Vote(user, candidate);
+
+        voteOne.setVoteId(new Long(1000l));
+        voteTwo.setVoteId(new Long(1001l));
+        voteThree.setVoteId(new Long(1002l));
+
         Mockito.when(candidateService.getCandidate(1)).thenReturn(candidate);
 
         Mockito.when(userService.getUser(1234l)).thenReturn(user);
@@ -100,12 +108,43 @@ public class VoteControllerTest {
     }
 
     @Test
-    public void castThreeVotes() {
+    public void castThreeVotes() throws Exception {
+        String candidateJson = jsonTester.write(candidateDto).getJson();
 
+        mockMvc.perform(post("/users/1234/votes")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(candidateJson))
+                .andExpect(status().isCreated());
+        mockMvc.perform(post("/users/1234/votes")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(candidateJson))
+                .andExpect(status().isCreated());
+        mockMvc.perform(post("/users/1234/votes")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(candidateJson))
+                .andExpect(status().isCreated());
     }
 
     @Test
-    public void castFourVotes() {
+    public void castFourVotes() throws Exception {
+        String candidateJson = jsonTester.write(candidateDto).getJson();
+
+        mockMvc.perform(post("/users/1234/votes")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(candidateJson))
+                .andExpect(status().isCreated());
+        mockMvc.perform(post("/users/1234/votes")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(candidateJson))
+                .andExpect(status().isCreated());
+        mockMvc.perform(post("/users/1234/votes")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(candidateJson))
+                .andExpect(status().isCreated());
+        mockMvc.perform(post("/users/1234/votes")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(candidateJson))
+                .andExpect(status().isForbidden());
 
     }
 }

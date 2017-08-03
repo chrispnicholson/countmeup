@@ -10,6 +10,7 @@ public class User {
     private Long id;
     private String name;
     private String userName;
+    private int votesCast = 0;
 
     public Long getId() {
         return id;
@@ -33,5 +34,13 @@ public class User {
 
     public String getUserName() {
         return userName;
+    }
+
+    public int getVotesCast() {
+        return votesCast;
+    }
+
+    public void castVote() {
+        votesCast++;
     }
 }

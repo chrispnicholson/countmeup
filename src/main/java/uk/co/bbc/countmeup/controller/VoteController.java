@@ -29,15 +29,15 @@ public class VoteController {
     private UserService userService;
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<Vote> castVote(@PathVariable int userId, @RequestBody CandidateDto candidateDto) {
+    public ResponseEntity<?> castVote(@PathVariable int userId, @RequestBody CandidateDto candidateDto) {
         try {
             Candidate candidate = candidateService.getCandidate(candidateDto.getId());
             User user = userService.getUser(userId);
             Vote vote = voteService.castVote(user, candidate);
 
-            return new ResponseEntity<Vote>(vote, HttpStatus.CREATED);
+            return new ResponseEntity<>(user.getUserName() + " voted", HttpStatus.CREATED);
         } catch (Exception e) {
-            return new ResponseEntity<Vote>(new Vote(), HttpStatus.FORBIDDEN);
+            return new ResponseEntity<>("Maximum votes cast", HttpStatus.FORBIDDEN);
         }
 
     }
