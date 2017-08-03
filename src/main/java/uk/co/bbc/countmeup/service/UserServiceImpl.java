@@ -16,7 +16,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User registerUser(String userName) throws Exception {
-        User registeredUser = userRepository.createUser(userName);
+        User newUser = new User();
+        newUser.setUserName(userName);
+        User registeredUser = userRepository.save(newUser);
+
+        if (registeredUser == null) {
+            throw new Exception();
+        }
 
         return registeredUser;
     }

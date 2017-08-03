@@ -44,7 +44,7 @@ public class VoteServiceImplTest {
         candidateUser.setUserName("david.lynch@davidlynchfoundation.org");
         candidateUser.setName("David Lynch");
         candidate.setUser(candidateUser);
-        candidate.setCandidateId(1);
+        candidate.setId(1);
     }
 
     @TestConfiguration
@@ -62,7 +62,7 @@ public class VoteServiceImplTest {
         Vote vote = voteService.castVote(voter, candidate);
         assertNotNull(vote);
         assertNotNull(vote.getCandidate());
-        assertEquals(1, vote.getCandidate().getCandidateId());
+        assertEquals(new Integer(1), vote.getCandidate().getId());
         assertNotNull(vote.getCandidate().getUser());
         assertEquals("David Lynch", vote.getCandidate().getUser().getName());
         assertEquals("david.lynch@davidlynchfoundation.org", vote.getCandidate().getUser().getUserName());

@@ -24,15 +24,15 @@ public class CandidateServiceImpl implements CandidateService {
 
     @Override
     public CandidateDto getCandidateDto(int id) {
-        Candidate candidate = candidateRepository.findCandidateById(id);
-        long allVotesCount = voteRepository.countAllVotes();
+        Candidate candidate = candidateRepository.findOne(new Integer(id));
+        long allVotesCount = voteRepository.count();
 
         return populateCandidateDto(candidate, allVotesCount);
     }
 
     private CandidateDto populateCandidateDto(Candidate candidate, long allVotesCount) {
         CandidateDto candidateDto = new CandidateDto();
-        candidateDto.setId(candidate.getCandidateId());
+        candidateDto.setId(candidate.getId());
         candidateDto.setName(candidate.getUser().getName());
         candidateDto.setVotes(candidate.getVotes().size());
         double rawPercentage = ((double) candidateDto.getVotes()) / ((double) allVotesCount);
@@ -43,8 +43,8 @@ public class CandidateServiceImpl implements CandidateService {
 
     @Override
     public List<CandidateDto> getAllCandidateDtos() {
-        List<Candidate> candidateList = candidateRepository.findAllCandidates();
-        long allVotesCount = voteRepository.countAllVotes();
+        Iterable<Candidate> candidateList = candidateRepository.findAll();
+        long allVotesCount = voteRepository.count();
 
         List<CandidateDto> candidateDtoList = new ArrayList<CandidateDto>();
 

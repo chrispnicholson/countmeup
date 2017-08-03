@@ -58,7 +58,7 @@ public class CandidatesServiceImplTest {
         userOne.setName("Dougie Jones");
         List<Vote> listOfVotes = new ArrayList<Vote>();
         candidateOne = new Candidate();
-        candidateOne.setCandidateId(1);
+        candidateOne.setId(1);
         candidateOne.setUser(userOne);
         for (int i = 0; i < 1000; i++) {
             Vote vote = new Vote(userOne, candidateOne);
@@ -69,7 +69,7 @@ public class CandidatesServiceImplTest {
         userTwo.setName("Janey E");
         listOfVotes = new ArrayList<Vote>();
         candidateTwo = new Candidate();
-        candidateTwo.setCandidateId(2);
+        candidateTwo.setId(2);
         candidateTwo.setUser(userTwo);
         for (int i = 0; i < 9000; i++) {
             Vote vote = new Vote(userTwo, candidateTwo);
@@ -82,8 +82,8 @@ public class CandidatesServiceImplTest {
 
     @Test
     public void getCandidate() {
-        when(candidateRepository.findCandidateById(1)).thenReturn(candidateOne);
-        when(voteRepository.countAllVotes()).thenReturn(10000l);
+        when(candidateRepository.findOne(1)).thenReturn(candidateOne);
+        when(voteRepository.count()).thenReturn(10000l);
 
         CandidateDto candidateDto = candidateService.getCandidateDto(1);
         assertNotNull(candidateDto);
@@ -95,8 +95,8 @@ public class CandidatesServiceImplTest {
 
     @Test
     public void getAllCandidates() {
-        when(candidateRepository.findAllCandidates()).thenReturn(listOfCandidates);
-        when(voteRepository.countAllVotes()).thenReturn(10000l);
+        when(candidateRepository.findAll()).thenReturn(listOfCandidates);
+        when(voteRepository.count()).thenReturn(10000l);
 
         List<CandidateDto> candidateDtoList = candidateService.getAllCandidateDtos();
         assertNotNull(candidateDtoList);

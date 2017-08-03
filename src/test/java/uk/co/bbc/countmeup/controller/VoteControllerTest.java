@@ -71,7 +71,7 @@ public class VoteControllerTest {
         candidateUser.setId(5678l);
         candidateUser.setUserName("david.lynch@davidlynchfoundation.org");
         candidate.setUser(candidateUser);
-        candidate.setCandidateId(1);
+        candidate.setId(1);
 //        candidate.setVotes(listVotes);
 
         candidateDto = new CandidateDto();
@@ -81,9 +81,9 @@ public class VoteControllerTest {
         voteTwo = new Vote(user, candidate);
         voteThree = new Vote(user, candidate);
 
-        voteOne.setVoteId(new Long(1000l));
-        voteTwo.setVoteId(new Long(1001l));
-        voteThree.setVoteId(new Long(1002l));
+        voteOne.setId(new Long(1000l));
+        voteTwo.setId(new Long(1001l));
+        voteThree.setId(new Long(1002l));
 
         Mockito.when(candidateService.getCandidate(1)).thenReturn(candidate);
 

@@ -1,24 +1,33 @@
 package uk.co.bbc.countmeup.entity;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Chris on 31-Jul-17.
  */
+@Entity
 public class Candidate {
-    private int candidateId;
-    // one-to-one relationship with User - Candidate is a User
+
+    @Id
+    //@Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Integer id;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    //@JoinColumn(name = "user_id")
     private User user;
-    // one-to-many relationship with Votes - can have zero to many votes
+
+    @OneToMany
     private List<Vote> votes = new ArrayList<Vote>();
 
-    public int getCandidateId() {
-        return candidateId;
+    public Integer getId() {
+        return id;
     }
 
-    public void setCandidateId(int candidateId) {
-        this.candidateId = candidateId;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public User getUser() {

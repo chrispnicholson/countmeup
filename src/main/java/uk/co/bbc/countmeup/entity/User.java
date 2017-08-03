@@ -2,14 +2,26 @@ package uk.co.bbc.countmeup.entity;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+import javax.persistence.*;
+
 /**
  * Created by Chris on 31-Jul-17.
  */
+@Entity
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+
+    @Column
     private String name;
+
+    @Column(unique = true)
     private String userName;
+
+    @Column
     private int votesCast = 0;
 
     public Long getId() {

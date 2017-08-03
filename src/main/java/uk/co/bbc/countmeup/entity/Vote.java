@@ -1,14 +1,21 @@
 package uk.co.bbc.countmeup.entity;
 
+import javax.persistence.*;
+
 /**
  * Created by Chris on 31-Jul-17.
  */
+@Entity
 public class Vote {
-    private Long voteId;
-    // many-to-one relationship
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Long id;
+
+    @ManyToOne
     private User voter;
 
-    // many-to-one relationship
+    @ManyToOne
     private Candidate candidate;
 
 
@@ -20,12 +27,12 @@ public class Vote {
 
     }
 
-    public Long getVoteId() {
-        return voteId;
+    public Long getId() {
+        return id;
     }
 
-    public void setVoteId(Long voteId) {
-        this.voteId = voteId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Candidate getCandidate() {
@@ -46,7 +53,7 @@ public class Vote {
 
     @Override
     public int hashCode() {
-        return voteId.hashCode();
+        return id.hashCode();
     }
 
     @Override
@@ -55,7 +62,7 @@ public class Vote {
             return false;
         } else {
             Vote other = (Vote) obj;
-            return voteId.equals(other.getVoteId());
+            return id.equals(other.getId());
         }
     }
 }
