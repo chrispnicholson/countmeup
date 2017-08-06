@@ -3,6 +3,7 @@ package uk.co.bbc.countmeup.service;
 import org.springframework.stereotype.Service;
 import uk.co.bbc.countmeup.dto.CandidateDto;
 import uk.co.bbc.countmeup.entity.Candidate;
+import uk.co.bbc.countmeup.entity.User;
 
 import java.util.List;
 
@@ -16,4 +17,6 @@ public interface CandidateService {
     public List<CandidateDto> getAllCandidateDtos();
 
     public Candidate getCandidate(int id);
+
+    public CandidateDto createCandidate(User nominatedUser);
 }

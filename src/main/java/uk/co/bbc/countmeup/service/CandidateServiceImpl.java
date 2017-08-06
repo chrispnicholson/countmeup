@@ -3,9 +3,11 @@ package uk.co.bbc.countmeup.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import uk.co.bbc.countmeup.dao.CandidateRepository;
+import uk.co.bbc.countmeup.dao.UserRepository;
 import uk.co.bbc.countmeup.dao.VoteRepository;
 import uk.co.bbc.countmeup.dto.CandidateDto;
 import uk.co.bbc.countmeup.entity.Candidate;
+import uk.co.bbc.countmeup.entity.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +23,9 @@ public class CandidateServiceImpl implements CandidateService {
 
     @Autowired
     private VoteRepository voteRepository;
+
+    @Autowired
+    private UserRepository userRepository;
 
     @Override
     public CandidateDto getCandidateDto(int id) {
@@ -58,6 +63,16 @@ public class CandidateServiceImpl implements CandidateService {
     @Override
     public Candidate getCandidate(int id) {
         return null;
+    }
+
+    @Override
+    public CandidateDto createCandidate(User nominatedUser) {
+        Candidate candidate = new Candidate();
+        candidate.setUser(nominatedUser);
+        Candidate nominatedCandidate = candidateRepository.save(candidate);
+        long allVotes = voteRepository.count();
+
+        return populateCandidateDto(nominatedCandidate, allVotes);
     }
 
     //without decimal digits

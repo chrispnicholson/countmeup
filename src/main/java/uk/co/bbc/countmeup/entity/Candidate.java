@@ -45,4 +45,19 @@ public class Candidate {
     public void addVote(Vote vote) {
         votes.add(vote);
     }
+
+    @Override
+    public int hashCode() {
+        return id.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null || !obj.getClass().equals(this.getClass())) {
+            return false;
+        } else {
+            Candidate other = (Candidate) obj;
+            return id.equals(other.getId());
+        }
+    }
 }

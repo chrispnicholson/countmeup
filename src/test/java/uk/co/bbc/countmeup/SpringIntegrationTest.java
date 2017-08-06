@@ -49,10 +49,11 @@ public class SpringIntegrationTest {
 
     }
 
-    protected void executePost(String url) throws IOException {
+    protected void executePost(String url, String body) throws IOException {
         final Map<String, String> headers = new HashMap<>();
         headers.put("Accept", "application/json");
         final HeaderSettingRequestCallback requestCallback = new HeaderSettingRequestCallback(headers);
+        requestCallback.setBody(body);
         final ResponseResultErrorHandler errorHandler = new ResponseResultErrorHandler();
 
         if (restTemplate == null) {

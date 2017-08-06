@@ -55,4 +55,19 @@ public class User {
     public void castVote() {
         votesCast++;
     }
+
+    @Override
+    public int hashCode() {
+        return id.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null || !obj.getClass().equals(this.getClass())) {
+            return false;
+        } else {
+            User other = (User) obj;
+            return id.equals(other.getId());
+        }
+    }
 }

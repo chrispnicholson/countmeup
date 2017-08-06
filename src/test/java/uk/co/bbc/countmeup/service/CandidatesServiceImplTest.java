@@ -1,6 +1,7 @@
 package uk.co.bbc.countmeup.service;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.junit4.SpringRunner;
 import uk.co.bbc.countmeup.dao.CandidateRepository;
+import uk.co.bbc.countmeup.dao.UserRepository;
 import uk.co.bbc.countmeup.dao.VoteRepository;
 import uk.co.bbc.countmeup.dto.CandidateDto;
 import uk.co.bbc.countmeup.entity.Candidate;
@@ -34,11 +36,17 @@ public class CandidatesServiceImplTest {
     @MockBean
     private VoteRepository voteRepository;
 
+    @MockBean
+    private UserRepository userRepository;
+
     @Autowired
     private CandidateService candidateService;
 
     private Candidate candidateOne;
     private Candidate candidateTwo;
+    private Candidate candidateThree;
+
+    private User userThree;
 
     private List<Candidate> listOfCandidates;
 
@@ -78,6 +86,13 @@ public class CandidatesServiceImplTest {
         listOfCandidates = new ArrayList<Candidate>();
         listOfCandidates.add(candidateOne);
         listOfCandidates.add(candidateTwo);
+
+        userThree = new User();
+        userThree.setId(new Long(9010));
+        userThree.setName("Zero Votes");
+        candidateThree = new Candidate();
+        candidateThree.setId(3);
+        candidateThree.setUser(userThree);
     }
 
     @Test
@@ -103,5 +118,13 @@ public class CandidatesServiceImplTest {
         assertEquals(2, candidateDtoList.size());
         assertEquals("10%", candidateDtoList.get(0).getVotesPercentage());
         assertEquals("90%", candidateDtoList.get(1).getVotesPercentage());
+    }
+
+    @Ignore
+    @Test
+    public void createCandidate() {
+        when(candidateRepository.save(candidateThree)).thenReturn(candidateThree);
+        when(voteRepository.count()).thenReturn(10000l);
+        CandidateDto candidateDto = candidateService.createCandidate(userThree);
     }
 }
